@@ -1,2 +1,2 @@
-# jtag
-An arduino-based JTAG Programmer for CPLDs and FPGAs that supports SVF (Serial Vector Format, revision C) files.
+# jtagduino
+JTAGduino is an Arduino-based JTAG Programmer for CPLDs and FPGAs that supports SVF (Serial Vector Format, revision C) files. I made this JTAG interface when I realized my Altera USBBlaster cable is incompatible with my old ATF15xx CPLDs. So, I made a super slow, but effective JTAG interface with a simple Arduino Uno and a C++ program that reads an SVF (rev. C) file, sends the commands to Arduino, which is connected to the TCK, TDI, TDO, TMS pins of the CPLD and relays those commands to the CPLD.
